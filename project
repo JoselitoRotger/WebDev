@@ -1,0 +1,79 @@
+let ele = document.querySelectorAll("*");
+for (let i = 0; i < ele.length; i++) {
+  let all = ele[i];
+  all.style.boxSizing = "border-box";
+}
+
+let htmlE = document.querySelector("html");
+htmlE.style.fontFamily = `Cambria, Cochin, Georgia, Times, "Times New Roman", serif`;
+htmlE.style.fontSize = "20px";
+
+let html_BodyE = document.querySelector("html,body");
+html_BodyE.style.minHeight = "100%";
+html_BodyE.style.margin = "0";
+
+let headerE = document.querySelector("header");
+headerE.style.background = "#000";
+headerE.style.display = "flex";
+headerE.style.justifyContent = "flex-end";
+
+let headerNav = document.querySelector("header nav");
+headerNav.style.display = "flex";
+
+let ele1 = document.querySelectorAll("header nav a");
+for (let i = 0; i < ele1.length; i++) {
+  let hNA = ele1[i];
+  hNA.style.border = "1px solid #000";
+  hNA.style.color = "#fff";
+  hNA.style.padding = "1em";
+  hNA.style.textDecoration = "none";
+}
+
+let bigHero = document.querySelector(".big-hero");
+bigHero.style.alignItems = "center";
+bigHero.style.backgroundAttachment = "fixed";
+// bigHero.style.backgroundImage =
+//   "/week-7-styling-html-with-javascript/assets/images/Lion_waiting_in_Namibia.jpg";
+bigHero.style.backgroundSize = "cover";
+bigHero.style.backgroundPosition = "center";
+bigHero.style.display = "flex";
+bigHero.style.justifyContent = "center";
+bigHero.style.minHeight = "100vh";
+
+let bigHero1 = document.querySelector(".big-hero h1");
+bigHero1.style.fontSize = "calc(0.5em + 5vmin)";
+
+let content = document.querySelector(".content");
+content.style.margin = "0 auto";
+content.style.maxWidth = "1200px";
+content.style.padding = "0.5em";
+
+let footer = document.querySelector("footer");
+footer.style.background = "#000";
+
+let footer_Nav = document.querySelector("footer nav");
+footer_Nav.style.display = "flex";
+
+let footer_Nav_A = document.querySelectorAll("footer nav a");
+for (let i = 0; i < footer_Nav_A.length; i++) {
+  let footer_Nav_An = footer_Nav_A[i];
+  footer_Nav_An.style.color = "#fff";
+  footer_Nav_An.style.padding = "0.5em";
+  footer_Nav_An.style.textDecoration = "none";
+}
+
+let navHover = document.querySelectorAll("header nav a");
+for (let i = 0; i < navHover.length; i++) {
+  let nHover = navHover[i];
+
+  nHover.addEventListener("mouseover", function () {
+    nHover.style.background = "#fff";
+    nHover.style.color = "#000";
+  });
+
+  nHover.addEventListener("mouseout", function () {
+    nHover.style.background = "";
+    nHover.style.color = "";
+  });
+}
+
